@@ -19,9 +19,10 @@
 10. normalize.css（用来初始化全局 css）
 
 ### 一些说明：
-1. node-sass 因为仅支持 python 2，所以更改为 dart-sass。
-2. postcss 的两个插件是用来自适应网页左右宽度的，这里为了适应桌面开发的需求，postcss-pxtorem 的 rootValue 设置为 192，如果是移动端，可改为 37.5。（似乎实践证明 PC 端不需要）
-3. 生成的项目版本为 Vue 2。
+1. 生成的项目版本为 Vue 2。
+2. node-sass 因为仅支持 python 2，所以更改为 dart-sass。
+3. postcss 的两个插件是用来自适应网页左右宽度的，这里为了适应桌面开发的需求，postcss-pxtorem 的 rootValue 设置为 192，如果是移动端，可改为 37.5。（似乎实践证明 PC 端不需要）
+4. package.json-bak.json 是含 postcss 及其插件的备份。
 
 ## 三、模板目录
 1. initial-backup：这个目录用来备份由 @vue/cli 创建的初始文件。
@@ -32,7 +33,7 @@
 6. src/store：Vuex 的配置。
 7. src/styles：样式（内含 init.css，用来进一步初始化全局样式）。
 8. src/views：视图。
-9. src/utils：工具（封装）。
+9. src/utils：工具（封装了权限与登录模板 auth.js、AES加密模板 crypt.js、网络请求与路由拦截模板 http.js）。
 
 ## 四、项目安装
 ```
